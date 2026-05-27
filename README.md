@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Journal</title>
+    <style>
+        /* Base Reset & Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 0 20px;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #111;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+        header p {
+            color: #666;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        /* Main Content Split */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Journal Entries */
+        .entry {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            border: 1px solid #eee;
+        }
+        .entry-date {
+            font-size: 0.85rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .entry h2 {
+            font-size: 1.8rem;
+            color: #111;
+            margin-bottom: 12px;
+        }
+        .entry p {
+            margin-bottom: 15px;
+            color: #444;
+        }
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .tag {
+            background: #f0f0f0;
+            color: #555;
+            padding: 3px 8px;
+            font-size: 0.75rem;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .tag:hover {
+            background: #e0e0e0;
+        }
+
+        /* Sidebar */
+        sidebar {
+            align-self: start;
+        }
+        .widget {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            margin-bottom: 30px;
+        }
+        .widget h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #111;
+            border-bottom: 2px solid #111;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        .widget p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+        .archive-list {
+            list-style: none;
+        }
+        .archive-list li {
+            margin-bottom: 8px;
+        }
+        .archive-list a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .archive-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Hiro's 30+day Project</h1>
+            <p>An attempt to isolate myself from social media.</p>
+        </header>
+
+        <div class="main-layout">
+            
+            <main>
+                <article class="entry">
+                    <div class="entry-date">May 27, 2026</div>
+                    <h2>Finding Focus in a Noisy World</h2>
+                    <p>Today I decided to leave my phone in the other room for the first two hours of the morning. The silence was loud at first, but eventually, my mind settled down. I managed to read twenty pages of my book and actually taste my coffee without scrolling through a feed.</p>
+                    <p>It made me realize how much of my focus is fragmented by choice. I'm going to try to make this a daily habit.</p>
+                    <div class="tags">
+                        <a href="#" class="tag">#mindfulness</a>
+                        <a href="#" class="tag">#habits</a>
+                        <a href="#" class="tag">#morning</a>
+                    </div>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-date">May 24, 2026</div>
+                    <h2>The Evolution of Creative Projects</h2>
+                    <p>I was looking through an old notebook from three years ago and found sketches for a project I completely forgot about. It's fascinating how ideas we think are incredibly important at the time can just evaporate, while others stick around and quietly grow.</p>
+                    <p>Maybe no idea is truly wasted; they just serve as stepping stones for what comes next.</p>
+                    <div class="tags">
+                        <a href="#" class="tag">#creativity</a>
+                        <a href="#" class="tag">#reflection</a>
+                    </div>
+                </article>
+            </main>
+
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3>About Me</h3>
+                    <p>Hi, I'm Alex. Welcome to my digital journal. I use this space to log my daily habits, creative workflows, and random thoughts on technology and life.</p>
+                </div>
+
+                <div class="widget">
+                    <h3>Archives</h3>
+                    <ul class="archive-list">
+                        <li><a href="#">May 2026 (4)</a></li>
+                        <li><a href="#">April 2026 (7)</a></li>
+                        <li><a href="#">March 2026 (5)</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Morning Coffee Thoughts. Built with simplicity.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
