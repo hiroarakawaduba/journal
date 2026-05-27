@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disconnect to Reconnect | A 30-Day Experiment</title>
+    <title>Disconnect to Reconnect | 30-Day Daily Log</title>
     <style>
         /* Modern Reset & Base Styling */
         * {
@@ -21,7 +21,7 @@
 
         /* Container */
         .container {
-            max-width: 1100px;
+            max-width: 800px;
             margin: 0 auto;
         }
 
@@ -46,18 +46,9 @@
             font-style: italic;
         }
 
-        /* Main Blog Layout Grid */
-        .blog-layout {
-            display: grid;
-            grid-template-columns: 2.5fr 1fr;
-            gap: 50px;
-            margin-top: 50px;
-        }
-
-        @media (max-width: 900px) {
-            .blog-layout {
-                grid-template-columns: 1fr;
-            }
+        /* Stream Layout */
+        .blog-stream {
+            margin-top: 40px;
         }
 
         /* Blog Posts Stream */
@@ -78,13 +69,13 @@
             margin-bottom: 12px;
         }
         .post-card h2 {
-            font-size: 1.9rem;
+            font-size: 1.8rem;
             color: #1a1a1a;
             margin-bottom: 15px;
             font-weight: 700;
         }
         .post-section {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
         .post-section strong {
             color: #34495e;
@@ -107,61 +98,10 @@
             border-radius: 6px;
             text-decoration: none;
             font-weight: 500;
-            transition: background 0.2s ease;
-        }
-        .tag:hover {
-            background: #e4e7eb;
         }
         .tag.research {
             background: #e3f2fd;
             color: #0d47a1;
-        }
-        .tag.research:hover {
-            background: #bbdefb;
-        }
-
-        /* Sidebar Design */
-        .sidebar {
-            align-self: start;
-        }
-        .widget {
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid #eef2f5;
-            margin-bottom: 30px;
-        }
-        .widget h3 {
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
-            color: #111111;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 6px;
-        }
-        .widget p {
-            font-size: 0.95rem;
-            color: #57606f;
-            规律 line-height: 1.6;
-        }
-        .archive-list {
-            list-style: none;
-        }
-        .archive-list li {
-            padding: 8px 0;
-            border-bottom: 1px dashed #f1f2f6;
-            font-size: 0.95rem;
-        }
-        .archive-list li:last-child {
-            border-bottom: none;
-        }
-        .archive-list a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-        .archive-list a:hover {
-            text-decoration: underline;
         }
 
         /* Footer */
@@ -180,97 +120,384 @@
     <div class="container">
         <header>
             <h1>Disconnect to Reconnect</h1>
-            <p>Documenting a 30-day journey away from social media, digital noise, and constant connectivity toward mindful presence.</p>
+            <p>The uninterrupted, chronological daily logs of a 30-day experiment tracking focus, attention limits, and mindfulness away from digital noise.</p>
         </header>
 
-        <div class="blog-layout">
-            
-            <main>
-                <article class="post-card">
-                    <div class="post-meta">Log Entry: Day 1</div>
-                    <h2>The Shock of Sudden Silence</h2>
-                    <div class="post-section">
-                        <p><strong>The Experience:</strong> Sat down at my computer to start schoolwork and instinctively went to type in a social site URL. Had to catch myself and close the tab. Felt a strange restlessness without that quick digital break.</p>
-                    </div>
-                    <div class="post-section">
-                        <p><strong>Observations:</strong> Noticed how often classmates at school check their phones during downtime. Since I don't have one, I usually just watch the room, but today it felt even more obvious how disconnected everyone seemed.</p>
-                    </div>
-                    <div class="post-section">
-                        <p><strong>Mindfulness in Action:</strong> Did a 5-minute box breathing exercise (inhale 4s, hold 4s, exhale 4s, hold 4s) at my desk to clear that restless feeling.</p>
-                    </div>
-                    <div class="tags">
-                        <a href="#" class="tag">#Day1</a>
-                        <a href="#" class="tag">#DigitalDetox</a>
-                        <a href="#" class="tag">#Mindfulness</a>
-                    </div>
-                </article>
+        <main class="blog-stream">
 
-                <article class="post-card">
-                    <div class="post-meta">Log Entry: Day 8</div>
-                    <h2>Reclaiming the Night & Sleep Quality</h2>
-                    <div class="post-section">
-                        <p><strong>The Experience:</strong> My sleep quality has noticeably improved. Getting away from all screens an hour before bed has made a massive difference.</p>
-                    </div>
-                    <div class="post-section">
-                        <p><strong>Research Highlight:</strong> Evening screen use suppresses melatonin. Completely cutting out nighttime browsing directly improves the depth of REM sleep cycles.</p>
-                    </div>
-                    <div class="tags">
-                        <a href="#" class="tag">#Week2</a>
-                        <a href="#" class="tag">#SleepHacks</a>
-                        <a href="#" class="tag class="tag research"">#Science</a>
-                    </div>
-                </article>
-
-                <article class="post-card">
-                    <div class="post-meta">Log Entry: Day 15</div>
-                    <h2>The Halfway Mark: Finding Peace in Boredom</h2>
-                    <div class="post-section">
-                        <p><strong>The Experience:</strong> Halfway mark. Designed Poster 3, which focuses entirely on the measurable benefits of daily mindfulness practices.</p>
-                    </div>
-                    <div class="post-section">
-                        <p><strong>Mindfulness in Action:</strong> Sat in complete silence for 15 minutes. It felt genuinely peaceful rather than restless or boring.</p>
-                    </div>
-                    <div class="tags">
-                        <a href="#" class="tag">#Halfway</a>
-                        <a href="#" class="tag">#MentalClarity</a>
-                    </div>
-                </article>
-
-                <article class="post-card">
-                    <div class="post-meta">Log Entry: Day 30</div>
-                    <h2>Final Reflections: A Permanent Shift</h2>
-                    <div class="post-section">
-                        <p><strong>The Experience:</strong> Final day! This project completely redefined how I view digital spaces. Moving forward, I’m keeping social media entirely out of my life and continuing daily mindfulness as a permanent tool for focus and stress management.</p>
-                    </div>
-                    <div class="post-section">
-                        <p><strong>Project Conclusion:</strong> The journals are complete, the posters are documented, and the data is ready for grading! Moving forward completely grounded in reality.</p>
-                    </div>
-                    <div class="tags">
-                        <a href="#" class="tag">#FinalDay</a>
-                        <a href="#" class="tag">#LifeChanged</a>
-                        <a href="#" class="tag">#SustainedFocus</a>
-                    </div>
-                </article>
-            </main>
-
-            <aside class="sidebar">
-                <div class="widget">
-                    <h3>About The Project</h3>
-                    <p>Welcome! This blog logs a 30-day personal experiment tracking attention management, dopamine habits, and the real-world impact of cutting desktop media distraction while implementing daily mindfulness.</p>
+            <article class="post-card">
+                <div class="post-meta">Day 1</div>
+                <h2>The Shock of Sudden Silence</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Sat down at my computer to start schoolwork and instinctively went to type in a social site URL. Had to catch myself and close the tab. Felt a strange restlessness without that quick digital break.</p>
                 </div>
-
-                <div class="widget">
-                    <h3>Experiment Log</h3>
-                    <ul class="archive-list">
-                        <li><a href="#">Week 1: Days 1 - 7</a></li>
-                        <li><a href="#">Week 2: Days 8 - 14</a></li>
-                        <li><a href="#">Week 3: Days 15 - 21</a></li>
-                        <li><a href="#">Week 4: Days 22 - 30</a></li>
-                    </ul>
+                <div class="post-section">
+                    <p><strong>Observations & Visuals:</strong> Noticed how often classmates at school check their phones during downtime. Since I don't have one, I usually just watch the room, but today it felt even more obvious how disconnected everyone seemed.</p>
                 </div>
-            </aside>
+                <div class="post-section">
+                    <p><strong>Mindfulness Action:</strong> Did a 5-minute box breathing exercise (inhale 4s, hold 4s, exhale 4s, hold 4s) at my desk to clear that restless feeling.</p>
+                </div>
+                <div class="tags">
+                    <a href="#" class="tag">#Habits</a>
+                    <a href="#" class="tag">#Mindfulness</a>
+                </div>
+            </article>
 
-        </div>
+            <article class="post-card">
+                <div class="post-meta">Day 2</div>
+                <h2>Time Wealth & Relieved Eyes</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Had a lot of extra time at home after finishing homework because I didn't spend an hour browsing feeds on my laptop.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Observations & Visuals:</strong> My eyes feel significantly less tired in the evening from the reduced overall screen time.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Mindfulness Action:</strong> Mindful eating during lunch. Instead of thinking about what I was missing online, I focused entirely on the environment around me.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 3</div>
+                <h2>Out of the Loop, but Grounded</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Missed an inside joke or a trend that my friends were talking about from the night before. Felt a little out of the loop, but the feeling passed quickly.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Observations & Visuals:</strong> Looked around the bus today. It looks surreal when almost every single person is looking down at a small screen in their hands.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Practical Research Highlight:</strong> Added to Poster 1: Observations show that public spaces are increasingly silent due to mobile device immersion, reducing spontaneous face-to-face interactions.</p>
+                </div>
+                <div class="tags">
+                    <a href="#" class="tag research">#Research</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 4</div>
+                <h2>Sitting with the Quiet</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Evening boredom hit around 8:00 PM when my computer was shut down. Usually, I'd look for entertainment online, but I had to sit with the quiet instead.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Mindfulness Action:</strong> 10-minute body scan meditation. Realized how much tension I hold in my shoulders when I'm trying to force myself to relax.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 5</div>
+                <h2>Fading Urges and Dopamine Loops</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> The automatic urge to open bookmarks or social tabs on my computer is fading. My brain is starting to accept the new boundaries.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Observations & Visuals:</strong> Drafted the visual layout for my first project poster, mapping out the connection between constant connectivity and attention spans.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Academic Research Highlight:</strong> Added to Poster 1: Research indicates that even without a personal mobile device, heavy desktop media consumption triggers similar dopamine reward loops that disrupt deep focus.</p>
+                </div>
+                <div class="tags">
+                    <a href="#" class="tag">#Poster1</a>
+                    <a href="#" class="tag research">#Research</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 6</div>
+                <h2>Sustained Hobby Focus</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Spent the afternoon working on hobbies without any digital distractions. My focus felt much more sustained.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Observations & Visuals:</strong> Noticed I am finishing my reading assignments faster because I'm not jumping back and forth between tabs.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 7</div>
+                <h2>Liberation and the 5 Senses</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> One week complete! It feels liberating to have my computer strictly be a tool for work rather than a destination for distraction.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Mindfulness Action:</strong> 5-senses outdoor walk (focusing on 5 things I can see, 4 I can touch, 3 I can hear, 2 I can smell, 1 I can taste) to ground myself in the physical world.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 8</div>
+                <h2>Melatonin Balance & Sleep Depth</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> My sleep quality has noticeably improved. Getting away from all screens an hour before bed has made a massive difference.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Academic Research Highlight:</strong> Added to Poster 2: Evening screen use suppresses melatonin. Completely cutting out nighttime browsing directly improves the depth of REM sleep cycles.</p>
+                </div>
+                <div class="tags">
+                    <a href="#" class="tag">#Poster2</a>
+                    <a href="#" class="tag research">#Research</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 9</div>
+                <h2>Clearing the Brain Fog</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Felt a high level of mental clarity during a difficult school day. Brain fog from constant information consumption is gone.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Mindfulness Action:</strong> Focused on mindful breathing for 3 minutes right before a quiz to lower my heart rate and settle my thoughts.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 10</div>
+                <h2>The Weekend Wall</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Hit a wall today. Felt a bit isolated from what people were doing online over the weekend.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Observations & Visuals:</strong> Sketched a brain diagram for my second poster, focusing on the prefrontal cortex and its role in attention management.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 11</div>
+                <h2>The Default Mode Network</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Pushed past yesterday's slump. Realized that quiet time isn't "wasted" time; it's empty space that gives my mind room to breathe.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Practical Research Highlight:</strong> Allowing the brain to experience boredom activates the "default mode network," which is essential for creative problem-solving and memory consolidation.</p>
+                </div>
+                <div class="tags">
+                    <a href="#" class="tag research">#Research</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 12</div>
+                <h2>Direct Conversations</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Had to actively seek out school updates by asking people directly rather than looking for posted announcements online. It actually led to a few good conversations.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Mindfulness Action:</strong> Simple awareness meditation—observing thoughts pass by like clouds without judging or reacting to them.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 13</div>
+                <h2>Poster 1 Hits the Hallway</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Finished and put up my first poster in the hallway today to share my initial observations on attention spans.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Observations & Visuals:</strong> Watched a few students stop to read the poster while simultaneously looking up from their phones. The contrast was fascinating.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 14</div>
+                <h2>Reclaiming Patience</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Two weeks in. The craving for instant, bite-sized entertainment on the computer has dropped to zero. I feel much more patient.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 15</div>
+                <h2>The Halfway Mark: Silence as Peace</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Halfway mark. Designed Poster 3, which focuses entirely on the measurable benefits of daily mindfulness practices.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Mindfulness Action:</strong> Sat in complete silence for 15 minutes. It felt genuinely peaceful rather than restless or boring.</p>
+                </div>
+                <div class="tags">
+                    <a href="#" class="tag">#Poster3</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 16</div>
+                <h2>Shrinking the Amygdala</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> A classmate brought up my poster today during a class discussion, noting that they never realized how much time they waste scrolling.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Academic Research Highlight:</strong> Studies show that routine mindfulness practices physically reduce the size of the amygdala, making the brain less reactive to daily stressors.</p>
+                </div>
+                <div class="tags">
+                    <a href="#" class="tag research">#Research</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 17</div>
+                <h2>Single-Task Processing Peak</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> My productivity levels are peaking. Because my computer is no longer an entertainment hub, I treat homework like a single, focused task.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Observations & Visuals:</strong> Took a photo of my secondary poster on the wall to add to my final project submission.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 18</div>
+                <h2>Deploying the STOP Technique</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Faced a stressful academic deadline today but didn't feel the urge to escape into digital distractions to avoid it.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Mindfulness Action:</strong> Used the "STOP" technique (Stop, Take a breath, Observe, Proceed) when the stress started to build up.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 19</div>
+                <h2>Defeating Social Comparison</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> My mood has felt incredibly stable this week. I'm not experiencing the spikes of annoyance or comparison that come with looking at curated digital lives.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Practical Research Highlight:</strong> Eliminating exposure to hyper-curated online lifestyles reduces upward social comparison, leading to higher overall life satisfaction.</p>
+                </div>
+                <div class="tags">
+                    <a href="#" class="tag research">#Research</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 20</div>
+                <h2>Peer Feedback On Sleep Logs</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Gathered feedback from peers who have been reading the posters around school over the last week.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Observations & Visuals:</strong> Noticed that the poster discussing sleep data generated the most comments from tired classmates.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 21</div>
+                <h2>Three Weeks Deep</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Three weeks complete. The habit of avoiding social platforms feels entirely natural now. I don't feel like I'm missing anything valuable.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Mindfulness Action:</strong> Loving-kindness meditation, focusing on appreciating real-world, face-to-face interactions.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 22</div>
+                <h2>The Final Poster Map</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Hung up my final poster, which summarizes the entire 3-week shift from constant digital stimulus to mindful, present awareness.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 23</div>
+                <h2>Clear Blocks of Daylight</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> I have so much clear space in my day now. I’ve spent more time reading physical books and being outside.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Observations & Visuals:</strong> Organized my notes and the layout for my final project site to ensure the visual progression of the posters is clear.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 24</div>
+                <h2>Protecting Working Memory</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> A teacher commented on how focused and engaged I've been during lectures lately. The training from daily mindfulness is definitely transferring over.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Academic Research Highlight:</strong> Single-tasking trains the brain's sustained attention pathways, whereas media multitasking fragments working memory capacity.</p>
+                </div>
+                <div class="tags">
+                    <a href="#" class="tag research">#Research</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 25</div>
+                <h2>Evaluating the Trade-off</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Realized that this project is coming to an end soon. Even when it's over, I don't think I want to log back into those accounts. The trade-off isn't worth it.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Mindfulness Action:</strong> Spent 10 minutes doing stream-of-consciousness journaling to process my thoughts on the experiment.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 26</div>
+                <h2>Preserving the Walls</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Carefully took down the posters from the school walls to preserve them. Looking at them all together feels like a massive accomplishment.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Observations & Visuals:</strong> Scanned my physical poster layouts into clean digital images for my presentation site.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 27</div>
+                <h2>Grounded Reality Alignment</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Had a conversation with a friend about how not owning a phone already sets me apart from the crowd, but removing social media entirely has made me feel completely grounded in reality.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Mindfulness Action:</strong> Mindful walking between classes, keeping my head up and paying attention to the sounds and movements in the hallways.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 28</div>
+                <h2>Quantifying Sleep Gains</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Finalized the website structure for the project. Ensured all my citations and links to the academic studies are clean and organized.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Practical Research Highlight:</strong> My sleep log shows a consistent gain of nearly 45 minutes of rest per night since starting this challenge.</p>
+                </div>
+                <div class="tags">
+                    <a href="#" class="tag research">#Research</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 29</div>
+                <h2>Quieting the Internal Chatter</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Looking back at Day 1, my internal thoughts are so much quieter now. I don't feel that frantic need to be constantly entertained.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Mindfulness Action:</strong> Reflective meditation on my personal growth over the last 30 days.</p>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">Day 30</div>
+                <h2>A Permanent Shift</h2>
+                <div class="post-section">
+                    <p><strong>Personal Experience:</strong> Final day! This project completely redefined how I view digital spaces. Moving forward, I’m keeping social media entirely out of my life and continuing daily mindfulness as a permanent tool for focus and stress management.</p>
+                </div>
+                <div class="post-section">
+                    <p><strong>Final Project Note:</strong> The journals are complete, the posters are documented, and the data is ready for grading!</p>
+                </div>
+                <div class="tags">
+                    <a href="#" class="tag">#FinalDay</a>
+                </div>
+            </article>
+
+        </main>
 
         <footer>
             <p>&copy; 2026 Disconnect to Reconnect. Mindfully crafted.</p>
